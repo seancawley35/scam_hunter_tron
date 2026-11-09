@@ -1,0 +1,5 @@
+<html><body><h2>Recharge USDT</h2>
+<div><span class="tab" onclick="show('trc20')">TRC20</span> <span class="tab" onclick="show('erc20')">ERC20</span></div>
+<p>Deposit address: <span id="addr">loading</span></p>
+<script>let d; fetch('api/deposit.json').then(r=>r.json()).then(j=>{d=j.data; show('trc20');});
+function show(n){ document.getElementById('addr').textContent = d[n]; }</script></body></html>
