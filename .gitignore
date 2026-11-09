@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+# Keep output/results.json for the submission, but you may want to drop bulky intermediates:
+output/results.jsonl
+node_modules/
